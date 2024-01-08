@@ -948,7 +948,25 @@ iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
 .in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
-#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write {
+    margin: 0px auto;
+    height: auto;
+    width: inherit;
+    word-break: normal;
+    overflow-wrap: break-word;
+    white-space: normal;
+    overflow-x: visible;
+    padding-top: 36px;
+    color: #000;
+    border-color: #0e1d69;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    background: rgba(255,255,255,0.9);
+    padding: 16px;
+    font-size: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
 #write.first-line-indent p { text-indent: 2em; }
 #write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
 #write.first-line-indent li { margin-left: 2em; }
@@ -1161,13 +1179,6 @@ body {
     font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
     color: rgb(51, 51, 51);
     line-height: 1.6;
-}
-
-#write {
-    max-width: 860px;
-  	margin: 0 auto;
-  	padding: 30px;
-    padding-bottom: 100px;
 }
 
 @media only screen and (min-width: 1400px) {
